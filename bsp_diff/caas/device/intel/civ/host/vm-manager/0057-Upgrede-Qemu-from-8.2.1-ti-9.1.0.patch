@@ -1,0 +1,26 @@
+From e96f97d78ae0b64a99479e8217890755f8ed44f7 Mon Sep 17 00:00:00 2001
+From: "Kothapeta, BikshapathiX" <bikshapathix.kothapeta@intel.com>
+Date: Wed, 15 Jan 2025 12:26:42 +0000
+Subject: [PATCH] Upgrede Qemu from 8.2.1 ti 9.1.0
+
+Qemu Upgrade
+
+Tracked-On: OAM-129499
+Signed-off-by: Kothapeta, BikshapathiX <bikshapathix.kothapeta@intel.com>
+
+diff --git a/scripts/setup_host.sh b/scripts/setup_host.sh
+index 4e5b74f..f10a321 100755
+--- a/scripts/setup_host.sh
++++ b/scripts/setup_host.sh
+@@ -9,7 +9,7 @@ set -eE
+ 
+ #---------      Global variable     -------------------
+ reboot_required=0
+-QEMU_REL="qemu-8.2.1"
++QEMU_REL="qemu-9.1.0"
+ skip_install_qemu=false
+ 
+ #Directory to keep versions of qemu which can be reused instead of downloading again
+-- 
+2.34.1
+
